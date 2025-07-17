@@ -6,15 +6,14 @@ count = 0
 while True:
     n = int(input('정수를 입력해주세요: '))
 
-    if n <= 0:
+    if n > 0:  # 양의 정수일 때만 실행
+        total += n
+        count += 1
+
+        if total >= 100:
+            break
+    else:
         print("양의 정수만 입력해주세요.")
-        continue
 
-    total += n
-    count += 1
-
-    if total >= 100:
-        break
-
-print(f'입력된 숫자의 개수: {count}')
-print(f'총합: {total}')
+print(total)
+print(count)

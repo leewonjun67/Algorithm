@@ -1,10 +1,13 @@
-# https://school.programmers.co.kr/learn/courses/30/lessons/120844
+# https://school.programmers.co.kr/learn/courses/30/lessons/181893
 
-def solution(numbers, direction):
-    if direction == "right":
-        return [numbers[-1]] + numbers[:-1]
-    elif direction == "left":
-        return numbers[1:] + [numbers[0]]
-    
-numbers = [1,2,3,4]
-print(solution(numbers, direction='left'))
+def solution(arr, query):
+    for i in range(len(query)):
+        if i % 2 == 0:          
+            arr = arr[:query[i] + 1]
+        else:            
+            arr = arr[query[i]:]
+    return arr
+
+arr = [0,1,2,3,4,5]
+query = [4,1,2]
+print(solution(arr,query))

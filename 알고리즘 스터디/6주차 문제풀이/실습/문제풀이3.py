@@ -3,9 +3,9 @@
 def solution(arr):
     arr = arr[:]  
     i = 0
-    while i < len(arr):
-        if arr[i] == arr[i]:
-            arr.pop(i)
+    while i < len(arr) - 1:
+        if arr[i] == arr[i + 1]:
+            arr.pop(i + 1)
             
         else:
             i += 1

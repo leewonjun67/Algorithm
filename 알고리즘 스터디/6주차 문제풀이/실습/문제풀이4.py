@@ -19,7 +19,7 @@ def solution(answers):
     score = [s1,s2,s3]   
     
     for i, n in enumerate(score):
-        if n == max(score):
+        if n == max(score):                       # max()함수 가장 큰수 
             answer.append(i+1)
        
       

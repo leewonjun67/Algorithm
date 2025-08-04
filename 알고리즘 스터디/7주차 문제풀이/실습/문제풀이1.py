@@ -1,5 +1,7 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/12932
 
+# return list(int(str(n)[::-1]))
+
 def solution(n):
     nx = list(map(int, str(n)))
     a = len(nx)
@@ -10,3 +12,5 @@ def solution(n):
 
 n=12345
 print(solution(n))
+
+nx =[1,2,3,4,5]

@@ -18,3 +18,7 @@ def solution(k, score):
 k = 3
 score = [10, 100, 20, 150, 1, 100, 200]
 print(solution(k,score))
+
+
+[150, 100, 20]
+answer = [10,10,10,20]

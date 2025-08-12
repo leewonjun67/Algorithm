@@ -15,7 +15,7 @@
 #     return 2
 
 def solution(spell, dic):
-    spelling = set(spell)
+    spelling = set(spell)                  # set함수 쓰는 이유 문자들의 중복을 제거하고 순서상관없이 dic과 비교하기 위해서 사용, set은 인덱스로 접근 불가 인덱스가 없음
     
     for di in dic:        
         if len(di) == len(spell) and set(di) == spelling:
@@ -23,5 +23,7 @@ def solution(spell, dic):
     return 2
 
 spell =["p", "o", "s"]
-dic = ["sod", "eocd", "qixm", "adio", "soo"]
+dic = ["poszy", "eocd", "qixm", "adio", "soo"]
 print(solution(spell,dic))
+
+

@@ -2,7 +2,6 @@
 
 def solution(progresses, speeds):
     answer = []
-    n = len(progresses)
 
     while progresses:
         for i in range(len(progresses)):

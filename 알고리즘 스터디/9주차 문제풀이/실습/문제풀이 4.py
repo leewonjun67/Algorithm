@@ -8,6 +8,7 @@ def solution(numbers, target):
             my.append(i + num)
             my.append(i - num)
         answer = my
+        print(my)
     return answer.count(target)
 
 numbers = [1,1,1,1,1]

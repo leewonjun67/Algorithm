@@ -7,14 +7,11 @@ def solution(s):
         if i == '(':
             stack.append(i)
         elif i == ')':
-            if not stack:
+            if len(stack) == 0:
                 return False
             stack.pop()
 
-    if stack:
-        return False
-    else:
-        return True
+    return len(stack) == 0
     
 s = "()()"
 print(solution(s))

@@ -27,3 +27,4 @@ def solution(strings, n):
 strings = ["sun", "bed", "car"]
 n =1
 print(solution(strings, n))
+

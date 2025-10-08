@@ -6,11 +6,11 @@ def bubble_sort(a: MutableSequence) -> None:
     "버블 정렬"
 
     n = len(a)
-    for i in range(n - 1):
-        for j in range(n-1, i, -1):
-            if a[j-1] > a[j]:
-                a[j-1], a[j] = a[j], a[j-1]
-
+    for i in range(n - 1):                   # 바깥쪽 반복문 (패스 횟수)
+        for j in range(n-1, i, -1):          # 안쪽 반복문 (인접 원소 비교)
+            if a[j-1] > a[j]:                # 앞의 원소가 뒤보다 크면
+                a[j-1], a[j] = a[j], a[j-1]  # 두 원소 교환
+ 
 
 if __name__ == '__main__':
     print("버블 정렬을 수행합니다")
